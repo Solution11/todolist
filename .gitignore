@@ -1,0 +1,5 @@
+#Ignore list
+#---Files---
+#---Folders---
+/dist/*
+/node_modules/**/*
