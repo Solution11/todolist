@@ -16,7 +16,7 @@ var
     notify      =require('gulp-notify');
 
 gulp.task('sass', function(){
-  return gulp.src('app/sass/**/*.scss')
+  return gulp.src(['app/sass/main.scss', 'app/sass/libs.scss'])
             .pipe(plumber({
               errorHandler: notify.onError(function(err){
                 return{
@@ -33,10 +33,10 @@ gulp.task('sass', function(){
             .pipe(browserSync.reload({stream: true}));
 });
 
+
 gulp.task('scripts', function() {
   return gulp.src([
-    'app/libs/jquery/dist/jquery.min.js',
-    'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+    'app/libs/jquery/dist/jquery.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
