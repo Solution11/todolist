@@ -1,0 +1,55 @@
+%clearfix{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin box-shadow($params){
+  box-shadow: $params;
+  -moz-box-shadow: $params;
+  -webkit-box-shadow: $params;
+}
+
+@mixin inlineblock($valign: top){
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+%valign{
+  &:before{
+    content:"";
+    width:0;
+    height:100%;
+    @include inlineblock(middle);
+  }
+}
+
+//responsive
+@function rem($px) {
+  @return $px / 18px + 0rem;
+}
+
+@mixin desktop{
+  @media screen and (max-width: 1920px){
+    @content
+  }
+}
+
+@mixin laptop{
+  @media screen and (max-width: 992px){
+    @content
+  }
+}
+
+@mixin tablets{
+  @media screen and (max-width: 768px){
+    @content
+  }
+}
+@mixin phone{
+  @media screen and (max-width: 480px){
+    @content
+  }
+}
