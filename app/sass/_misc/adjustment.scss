@@ -13,6 +13,34 @@ body{
   background: $white;
 }
 
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0;
+  margin-bottom:0;
+  font-weight: normal;
+}
+
+img{
+  width:100%;
+  height:auto;
+}
+
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
 .wrapper{
   min-height: 100%;
   overflow: hidden;
@@ -34,18 +62,10 @@ body{
   min-width: $min_width;
 }
 
-li {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
 .container{
   margin: 0 auto;
-  max-width: $min_width;
+  width: $min_width;
+  padding: 0 10px;
 }
 
 .clearfix:after{
@@ -53,8 +73,28 @@ ul {
   clear: both;
 }
 
-h1,h2,h3,h4,h5,h6{
-  margin-top: 0;
-  margin-bottom:0;
-  font-weight: normal;
+
+.visually-hidden:not(:focus):not(:active)
+{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn{
+    background-color:black;
+    color:white;
+    font:inherit;
+    vertical-align:middle;
+    text-align:center;
+    text-transform: uppercase;
 }
