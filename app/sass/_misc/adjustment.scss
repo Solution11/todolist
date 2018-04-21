@@ -41,36 +41,11 @@ a{
   color:white;
 }
 
-.wrapper{
-  min-height: 100%;
-  overflow: hidden;
-  position: relative;
-  min-width: rem($min_width)+rem(20px);
-}
-
-.wrapper:after{
-  content: "";
-  display: block;
-  height: $height_footer;
-}
-
-.footer{
-  height: $height_footer;
-  margin-top: -$height_footer;
-  width:100%;
-  position: relative;
-  min-width: $min_width;
-}
 
 .container{
   margin: 0 auto;
   width: $min_width;
   padding: 0 10px;
-}
-
-.clearfix:after{
-  display: block;
-  clear: both;
 }
 
 
@@ -90,11 +65,3 @@ a{
   overflow: hidden;
 }
 
-.btn{
-    background-color:black;
-    color:white;
-    font:inherit;
-    vertical-align:middle;
-    text-align:center;
-    text-transform: uppercase;
-}

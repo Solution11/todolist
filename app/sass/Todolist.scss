@@ -1,0 +1,106 @@
+body{
+  font-family: 'ubunturegular', arial, sans-serif;
+  background-color: #fff59d;
+  color:#403e35;
+}
+
+.btn{
+    background-color:#5a8af6;
+    color:white;
+    font:inherit;
+    vertical-align:middle;
+    text-align:center;
+    width:none;
+}
+
+.main__title{
+  font-family: 'ubuntubold', arial, sans-serif;
+  margin: 30px 0;
+  font-size:34px;
+  display: flex;
+  justify-content: flex-start;
+  letter-spacing:0.2em;
+}
+
+
+.todo__title{
+  font-size:25px;
+  margin-bottom:15px;
+}
+
+.alert{
+  max-width:500px;
+  padding:20px;
+  background-color:#7c7c7c;
+  margin-bottom:15px;
+  border-radius:4px;
+}
+
+.alert-warning{
+  background-color:#ffe082;
+}
+.alert-success{
+  background-color:#a5d6a7;
+}
+.alert-danger{
+  background-color:#ef9a9a;
+}
+
+.todo__item{
+  max-width:500px;
+  padding:20px;
+  background-color:#fdc689;
+  margin-bottom:5px;
+  border-radius:4px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.btn__del{
+  width:27px;
+  height:27px;
+  background: none;
+  padding:0;
+  box-shadow:none;
+  outline: none;
+  border: 0;
+}
+
+.task-form__title{
+  font-size:25px;
+  padding:20px;
+  max-width:500px;
+  background-color:#ffa083;
+}
+
+.task-form{
+  margin-bottom:15px;
+  padding:20px;
+  max-width:500px;
+  background-color:#fdc689;
+  display:flex;
+  flex-direction: column;
+}
+
+input{
+  width:none;
+}
+.form__input{
+
+  box-shadow:none;
+  outline: none;
+  border: 0;
+  padding:10px;
+  border-radius: 4px;
+  margin-bottom:20px;
+}
+
+.btn__add{
+  padding:10px;
+  border-radius:4px;
+  box-shadow:none;
+  outline: none;
+  border: 0;
+  width:100px;
+}

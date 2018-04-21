@@ -2,12 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <title>Document</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
+
+<div class="container">
+  <h1 class="main__title">To DO manager</h1>
+  <h2 class="todo__title">Список задач на сегодня:</h2>
+  <!--Alerts-->
+  <div class="alert alert-warning">
+    Задача добавлена!
+  </div>
+  <div class="alert alert-success">
+    Задача выполнена!
+  </div>
+  <div class="alert alert-danger">
+    Задача удалена!
+  </div>
+  <!--Task list-->
+
+  <ul class="todo__list">
+    <li class="todo__item">
+      <span class="todo__desc">Посмотреть интенсив</span>
+    <button class="todo__btn btn__del">
+      <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2"><defs><style>.cls-1{fill:#ed7161;}.cls-2{fill:#fff;}</style></defs><title>deletew</title><path class="cls-1" d="M19.2,9.6A9.6,9.6,0,1,1,9.6,0a9.6,9.6,0,0,1,9.6,9.6Zm0,0"/><path class="cls-2" d="M10.73,9.6l2.83-2.83a.8.8,0,1,0-1.13-1.13L9.6,8.47,6.77,5.64A.8.8,0,0,0,5.64,6.77L8.47,9.6,5.64,12.43a.8.8,0,0,0,0,1.13.79.79,0,0,0,1.13,0L9.6,10.73l2.83,2.83a.79.79,0,0,0,1.13,0,.8.8,0,0,0,0-1.13Zm0,0"/></svg>
+    </button>
+    </li>
+      <li class="todo__item">
+        <span class="todo__desc">Поставить лайк</span>
+      <button class="todo__btn btn__del">
+        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2"><defs><style>.cls-1{fill:#ed7161;}.cls-2{fill:#fff;}</style></defs><title>deletew</title><path class="cls-1" d="M19.2,9.6A9.6,9.6,0,1,1,9.6,0a9.6,9.6,0,0,1,9.6,9.6Zm0,0"/><path class="cls-2" d="M10.73,9.6l2.83-2.83a.8.8,0,1,0-1.13-1.13L9.6,8.47,6.77,5.64A.8.8,0,0,0,5.64,6.77L8.47,9.6,5.64,12.43a.8.8,0,0,0,0,1.13.79.79,0,0,0,1.13,0L9.6,10.73l2.83,2.83a.79.79,0,0,0,1.13,0,.8.8,0,0,0,0-1.13Zm0,0"/></svg>
+    </button>
+    </li>
+      <li class="todo__item">
+        <span class="todo__desc">Сделать задание</span>
+      <button class="todo__btn btn__del">
+        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2"><defs><style>.cls-1{fill:#ed7161;}.cls-2{fill:#fff;}</style></defs><title>deletew</title><path class="cls-1" d="M19.2,9.6A9.6,9.6,0,1,1,9.6,0a9.6,9.6,0,0,1,9.6,9.6Zm0,0"/><path class="cls-2" d="M10.73,9.6l2.83-2.83a.8.8,0,1,0-1.13-1.13L9.6,8.47,6.77,5.64A.8.8,0,0,0,5.64,6.77L8.47,9.6,5.64,12.43a.8.8,0,0,0,0,1.13.79.79,0,0,0,1.13,0L9.6,10.73l2.83,2.83a.79.79,0,0,0,1.13,0,.8.8,0,0,0,0-1.13Zm0,0"/></svg>
+    </button>
+    </li>
+      <li class="todo__item">
+        <span class="todo__desc">Запостить</span>
+      <button class="todo__btn btn__del">
+        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2"><defs><style>.cls-1{fill:#ed7161;}.cls-2{fill:#fff;}</style></defs><title>deletew</title><path class="cls-1" d="M19.2,9.6A9.6,9.6,0,1,1,9.6,0a9.6,9.6,0,0,1,9.6,9.6Zm0,0"/><path class="cls-2" d="M10.73,9.6l2.83-2.83a.8.8,0,1,0-1.13-1.13L9.6,8.47,6.77,5.64A.8.8,0,0,0,5.64,6.77L8.47,9.6,5.64,12.43a.8.8,0,0,0,0,1.13.79.79,0,0,0,1.13,0L9.6,10.73l2.83,2.83a.79.79,0,0,0,1.13,0,.8.8,0,0,0,0-1.13Zm0,0"/></svg>
+      </button>
+    </li>
+  </ul>
+  <!--Task form-->
+  <h2 class="task-form__title">Добавить новую задачу</h2>
+  <form class="task-form">
+    <input type="text" class="form__input" id="addNewTask" placeholder="Текст задачи" required>
+    <input type="submit" class="btn btn__add" value="Добавить"></input>
+  </form>
+</div>
 
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
